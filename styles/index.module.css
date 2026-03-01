@@ -1,76 +1,97 @@
-
-.home{
-    width: 70%;
-    margin: 0 auto;
-    margin-block: 2rem;
+.home {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-block: 2rem;
+  padding-top: 100px;
+  min-height: 100vh;
 }
 
-.winner{
-    margin-block: 3rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+.winner {
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
-.winner_info{
-    background-color: #231E39;
-    padding: 1rem;
-    border-radius: .2rem;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-items: center;
+.winner_info {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
 }
 
-
-.winner_message{
-    background-color: #231E39;
-    padding: 2rem;
-    border-radius: .2rem;
-    font-size: 1.5rem;
-    color: #B3B8CD;
-    line-height: 0;
-    position: relative;
+.candidate_list {
+  background: linear-gradient(135deg, #FF9D00 0%, #ffb340 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
 }
 
-.winner_message small{
-    font-size: 5rem;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-
+.candidate_list p {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  color: #0A0A0A;
+  font-size: 0.875rem;
+  text-transform: uppercase;
 }
 
-
-.candidate_list{
-    background-color: #9a02ac;
-    font-size: 1rem;
-    padding: .1rem 1rem;
+.candidate_list span {
+  background: rgba(10, 10, 10, 0.8) !important;
+  padding: 0.5rem 1rem !important;
+  margin-left: 0.75rem !important;
+  color: #FF9D00 !important;
+  border-radius: 0.5rem !important;
+  font-family: 'DM Mono', monospace !important;
+  font-weight: 500 !important;
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
 }
 
-.candidate_list p{
-    font-weight: 600;
+.winner_message {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: #F5F5F5;
+  line-height: 1.5;
+  position: relative;
+  font-family: 'Syne', sans-serif;
 }
-.candidate_list span{
-    background-color: #231E39;
-    padding: .5rem;
-    margin-left: .5rem;
-    color: #B3B8CD;
-    border-radius: .2rem;
+
+.winner_message small {
+  font-size: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0.1;
+  font-weight: 800;
 }
 
+@media screen and (max-width: 35em) {
+  .home {
+    width: 95%;
+    padding-top: 80px;
+  }
 
+  .winner {
+    grid-template-columns: 1fr;
+  }
 
-@media screen  and (max-width: 35em){
-    .home{
-        width: 90%;
-    }
-    .winner{
-        grid-template-columns: repeat(1, 1fr); 
-    }
-    .winner_message small{
-        font-size: 2rem;
-    }
+  .winner_info {
+    grid-template-columns: 1fr;
+  }
+
+  .winner_message small {
+    font-size: 2rem;
+  }
 }

@@ -1,18 +1,20 @@
-
-
-.button{
-    margin-block: 2rem;
-    background-color: transparent;
-    border: 1px dotted #9a02ac;
-    padding: .5rem 1rem;
-    color: #9a02ac;
-    border-radius: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all .4s ease-in-out;
+.button {
+  margin-block: 2rem;
+  background: #FF9D00;
+  border: none;
+  padding: 1rem 2rem;
+  color: #0A0A0A;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 157, 0, 0.2);
 }
 
-.button:hover{
-    background-color: #9a02ac;
-    color: #231E39;
+.button:hover {
+  background: #ffb340;
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(255, 157, 0, 0.35);
 }

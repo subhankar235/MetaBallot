@@ -128,7 +128,7 @@ const candidateRegisration = () => {
           <Input
             inputType="text"
             title="Name"
-            placeholder="Voter Name"
+            placeholder="Candidate Name"
             handleClick={(e) =>
               setCandidateForm({ ...candidateForm, name: e.target.value })
             }
@@ -136,7 +136,7 @@ const candidateRegisration = () => {
           <Input
             inputType="text"
             title="Address"
-            placeholder="Voter Address"
+            placeholder="Candidate Address"
             handleClick={(e) =>
               setCandidateForm({ ...candidateForm, address: e.target.value })
             }
@@ -144,7 +144,7 @@ const candidateRegisration = () => {
           <Input
             inputType="text"
             title="Age"
-            placeholder="Voter Position"
+            placeholder="Candidate Position"
             handleClick={(e) =>
               setCandidateForm({ ...candidateForm, age: e.target.value })
             }
